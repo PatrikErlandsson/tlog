@@ -1,0 +1,143 @@
+body, html {
+    background-color: #f5f5f5;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 a {
+    color: #fff;
+}
+
+
+#welcome {
+    text-align: center;
+    color: #1d87e2;
+}
+
+#slide {
+    height: 700px;
+    /*background-color: #fff;*/
+    background-image: url(../img/sl1.png);
+    text-align:center;
+    display:table;
+    width:100%;
+
+}
+
+.joinReg h1 {
+    display: table-cell; 
+    vertical-align: middle;
+    color: #fff;
+}
+
+.joinReg {
+    height: 700px;
+    text-align:center;
+    display:table;
+    width:100%;
+    margin: 0;
+}
+
+#join {
+    background-color: #1976D2;
+}
+
+#reg {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reg h1 {
+    color: #e6e6e6;
+}
+
+.join {
+    height: 50px;
+    width: 100px;
+    color: aliceblue;
+    background-color:  dimgrey;
+}
+
+#slide h1 {
+    display: table-cell; 
+    vertical-align: middle;
+    color: #fff;
+    font-size: 40px;
+}
+
+md-sidenav md-list-item {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    color: #
+}
+
+md-sidenav md-list {
+    margin-top: 55px;
+}
+
+md-toolbar md-list-item, md-toolbar md-list-item a {
+   color: #1e73e8;
+}
+
+md-toolbar md-list-item, md-toolbar md-list-item a:hover {
+    color: #e0960b;
+    cursor: pointer;
+}
+
+md-sidenav md-list-item:hover {
+    text-align: center;
+    color: #2f2f2f;
+    cursor: pointer;
+}
+
+
+.box-headers {
+    background-color: #1d87e2;
+    color: #fff;
+}
+
+md-sidenav {
+    background-color: rgba(248, 248, 248, 0.9);
+    color: #1e73e8;
+    width: 150px !important;
+}
+
+md-sidenav a {
+    color: #1e73e8;
+}
+
+md-toolbar {
+    background-color: rgba(248, 248, 248, 0.58);
+    opacity: 0.9;
+    color: #222222;
+}
+
+md-toolbar h1 a {
+    color: #1e73e8;
+    font-family: 'Indie Flower', cursive;
+}
+
+.login-button {
+    background-color: #195683;
+    color: #fff;
+}
+
+#menu-icon {
+
+}
+
+.menu {
+
+}
+
+md-sidenav, 
+md-sidenav.md-locked-open, 
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 200px !important;
+    width: 85vw !important;
+    max-width: 200px !important;
+} 

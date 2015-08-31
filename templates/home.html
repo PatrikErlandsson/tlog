@@ -1,0 +1,45 @@
+<div id="welcome">
+    <h2>Welcome {{user}}</h2>
+</div>
+<div flex layout-gt-md="row">
+
+
+<md-card flex="50">
+    <md-card-content>
+        <form ng-submit="addPerson()">
+            <h2>Add to Database:</h2>
+            <md-input-container>
+                <label>First Name</label>
+                <input ng-model="firstName">
+            </md-input-container>
+            <md-input-container>
+                <label>Last Name</label>
+                <input ng-model="lastName" type="text">
+            </md-input-container>
+                <md-button class="md-raised md-primary" type="submit">Submit</md-button>
+        </form>
+    </md-card-content>
+</md-card>
+<!--
+<input ng-model="data.text" type="text">
+<h1>Yous say {{data.text}}</h1>
+-->
+<md-card flex="50">
+    <md-card-content>
+        <md-list layout="column" flex>
+            <h2>Live updated Database:</h2>
+            <md-list-item ng-repeat="person in persons">
+                <h3>{{person.firstname }} </h3>
+                <h3>{{person.lastname}} </h3>
+                <div>
+                <md-button class="md-raised md-warn" ng-click="persons.$remove(person)">Delete</md-button>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-card-content>
+</md-card>
+</div>
+
+
+
+

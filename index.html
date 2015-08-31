@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+    <body ng-app="travelLog" ng-controller="mainController" layout="column">
+        
+        <md-toolbar md-scroll-shrink="true" md-is-locked-open="$mdMedia('sm')" layout="row" class="md-whiteframe-z4">
+            <md-button class="menu" ng-click="toggleSidenav()">
+                <i id="menu-icon" class="material-icons md-48" style="color: #1e73e8" hide-gt-md>menu</i>
+            </md-button>
+            <h1><a href="#/">TraveLog Alpha</a></h1>
+            <md-list layout="row" hide-sm hide-md>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <p>Home</p>
+                    </md-list-item>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <p>Profile</p>
+                    </md-list-item>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <p>Settings</p>
+                    </md-list-item>
+                    
+                    <md-list-item ng-click="unAuthLogout()" ng-show="loggedIn">
+                            <p>Logout</p>
+                    </md-list-item>
+                
+                    <md-list-item ng-show="!loggedIn" ng-click="showAdvanced($event)">
+                        <a href="#/login">Login</a>
+                    </md-list-item>
+                    
+                </md-list>
+            
+        </md-toolbar>
+
+            
+        
+
+       
+
+        <div id="container" layout="row" flex>  
+            
+            <!--SIDENAV-->
+            <md-sidenav md-component-id="left" class="md-sidenav-left" layout="column" class="md-whiteframe-z4" hide-gt-sm>
+                <hr>
+                <md-list flex>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <h2>Home</h2>
+                    </md-list-item>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <h2>Profile</h2>
+                    </md-list-item>
+                    
+                    <md-list-item ng-show="loggedIn">
+                        <h2>Settings</h2>
+                    </md-list-item>
+                    
+                    <md-list-item ng-click="unAuthLogout()" ng-show="loggedIn">
+                            <h2>Logout</h2>
+                    </md-list-item>
+                    
+                    <md-list-item ng-show="!loggedIn">
+                        <a href="#/login"><h2>Login</h2></a>
+                    </md-list-item>
+                    
+                </md-list>
+                
+
+                
+            </md-sidenav>
+            
+            <!--// SIDENAV -->
+            
+            <md-content flex>
+                <div ng-view></div>
+                <!--Content goes here-->
+            </md-content>
+            
+        </div>
+            
+        
+        
+        
+        
+        
+        
+        
+        
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.5.0/angular-material-icons.min.js"></script> 
+    <script src="script/angular-route.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+    <script src="script/system.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/app.js"></script>
+
+</body>
+</html>
